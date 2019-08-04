@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://levels/Level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://objects/Coin.tscn" type="PackedScene" id=2]
+[ext_resource path="res://objects/BreakableLine.tscn" type="PackedScene" id=3]
+[ext_resource path="res://objects/ToggleableLine.tscn" type="PackedScene" id=4]
+
+[node name="Level" instance=ExtResource( 1 )]
+
+[node name="Coin" parent="Coins" index="0"]
+position = Vector2( 255, 136 )
+
+[node name="Coin2" parent="Coins" index="1" instance=ExtResource( 2 )]
+position = Vector2( 253, 256 )
+
+[node name="BreakableLine" parent="Lines" index="0" instance=ExtResource( 3 )]
+position = Vector2( 256, 392 )
+rotation = 0.785398
+
+[node name="BreakableLine2" parent="Lines" index="1" instance=ExtResource( 3 )]
+position = Vector2( 104, 256 )
+
+[node name="ToggleableLine" parent="Lines" index="2" instance=ExtResource( 4 )]
+position = Vector2( 104, 384 )
+
+[node name="ToggleableLine3" parent="Lines" index="3" instance=ExtResource( 4 )]
+position = Vector2( 152, 136 )
+rotation = 0.785398
+default = false
+
+[node name="ToggleableLine4" parent="Lines" index="4" instance=ExtResource( 4 )]
+position = Vector2( 352, 136 )
+rotation = -0.785398
+default = false
+
+[node name="ToggleableLine5" parent="Lines" index="5" instance=ExtResource( 4 )]
+position = Vector2( 352, 384 )
+rotation = 1.5708
+default = false
+
+[node name="ToggleableLine2" parent="Lines" index="6" instance=ExtResource( 4 )]
+position = Vector2( 400, 384 )
+
+[node name="Path2D" parent="." index="6"]
+editor/display_folded = false
+
+[node name="Player" parent="Path2D" index="0"]
+position = Vector2( 259, 40 )
+

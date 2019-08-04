@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://objects/Line.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ToggleableLine.gd" type="Script" id=2]
+
+[node name="ToggleableLine" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Sprite" parent="." index="1"]
+modulate = Color( 0.498039, 0.54902, 0.882353, 1 )
+

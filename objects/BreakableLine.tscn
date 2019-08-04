@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://objects/Line.tscn" type="PackedScene" id=1]
+[ext_resource path="res://objects/BreakableLine.gd" type="Script" id=2]
+
+[node name="BreakableLine" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Sprite" parent="." index="1"]
+modulate = Color( 0.811765, 0.372549, 0.372549, 1 )
+
